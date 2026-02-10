@@ -17,7 +17,26 @@ This skill provides comprehensive guidance for working with AWS HealthOmics bioi
 
 ## Installation
 
-Copy `aws-healthomics.skill` to your Claude Code skills directory.
+### Option 1: Personal Skill (Available in All Projects)
+
+Clone directly into your personal Claude Code skills directory:
+
+```bash
+git clone https://github.com/dgallitelli/aws-healthomics-skill.git ~/.claude/skills/aws-healthomics
+```
+
+### Option 2: Project-Specific Skill
+
+Clone into a specific project's `.claude/skills` directory:
+
+```bash
+cd /path/to/your/project
+git clone https://github.com/dgallitelli/aws-healthomics-skill.git .claude/skills/aws-healthomics
+```
+
+### Verify Installation
+
+In Claude Code, type `/` to see available skills. You should see `aws-healthomics` in the list.
 
 ## Skill Structure
 
@@ -35,11 +54,30 @@ aws-healthomics/
 
 ## Usage
 
-The skill triggers when working with:
+### Manual Invocation
+
+Invoke the skill directly in Claude Code:
+
+```
+/aws-healthomics
+```
+
+### Automatic Invocation
+
+The skill triggers automatically when you mention:
 - Genomics/bioinformatics workflows
 - WDL, Nextflow, or CWL pipelines
 - AWS HealthOmics service
 - RNA-seq, DNA-seq, variant calling pipelines
+
+### Example Prompts
+
+```
+"Create a new WDL workflow for RNA-seq analysis"
+"Help me migrate my Cromwell pipeline to HealthOmics"
+"Debug why my HealthOmics workflow run failed"
+"Set up ECR pull-through cache for bioinformatics containers"
+```
 
 ## Prerequisites
 

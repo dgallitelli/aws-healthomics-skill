@@ -3,16 +3,12 @@ name: aws-healthomics
 description: |
   Create, migrate, run, debug and optimize genomics workflows in AWS HealthOmics.
   Use when working with bioinformatics pipelines supporting WDL, Nextflow, or CWL languages.
-
-  Triggers: (1) Creating new genomics/bioinformatics workflows, (2) Migrating existing
-  Cromwell/on-premises WDL pipelines to HealthOmics, (3) Running and monitoring workflow
-  executions, (4) Debugging failed workflow runs, (5) Optimizing workflow performance,
-  (6) Setting up ECR pull-through caches for containers, (7) Integrating workflows from
-  Git repositories (GitHub, GitLab, Bitbucket), (8) Searching for genomics files across
-  S3 and HealthOmics stores.
-
-  Keywords: healthomics, WDL, CWL, Nextflow, workflow, genomics, bioinformatics, pipeline,
-  RNA-seq, DNA-seq, variant calling, scRNA-seq, omics, sequencing
+  Triggers: creating new genomics/bioinformatics workflows, migrating Cromwell/on-premises
+  WDL pipelines, running and monitoring workflow executions, debugging failed runs,
+  optimizing performance, setting up ECR pull-through caches, integrating from Git repos,
+  or searching for genomics files. Keywords: healthomics, WDL, CWL, Nextflow, workflow,
+  genomics, bioinformatics, pipeline, RNA-seq, DNA-seq, variant calling, scRNA-seq, omics.
+argument-hint: "[workflow or run ID]"
 ---
 
 # AWS HealthOmics Workflow Development
